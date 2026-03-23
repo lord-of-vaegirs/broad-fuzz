@@ -28,3 +28,10 @@
 	* 将覆盖率反馈引入 LLM 的 prompt 变异过程，自动生成针对 C 库 API 的 fuzz driver，在openssl、curl 等真实库上发现了多个 CVE。核心创新是把传统 fuzzing的"输入变异+覆盖率引导"范式迁移到"prompt 变异+代码生成"上，是该方向设计最严谨的早期工作之一。
 2. ✅PromeFuzz: A Knowledge-Driven Approach to Fuzzing Harness Generation with Large Language Models
 	* 相比 PromptFuzz 的覆盖率驱动方式，PromeFuzz引入了知识驱动（knowledge-driven）的方法来生成 fuzzing harness，在 LLM 理解库 API语义方面更进一步。两篇放在一起对比，能清晰展示 LLM 辅助 fuzzing,从"覆盖率引导"到"知识引导"的演进路径。
+
+### Part 4: Other Reference
+1. (来自promptfuzz) Inferfix: End-to-end program repair with llms.arXiv:2303.07263 (2023)
+2. (来自promptfuzz) Conversational automated program repair. arXiv:2301.13246 (2023)
+3. (来自promptfuzz) Afgen: Whole-function fuzzing for applications and libraries.(2024 IEEE)
+4. promptfuzz的related work里可以借鉴一些传统fuzz方法（可直接复述作为参考，作为对比）
+5. 还可以引一些机器学习的论文，因为目前LLM辅助模糊测试也有基于机器学习进行
